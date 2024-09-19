@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20 Questions Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>20 Questions</h1>
+        <div id="question" class="question">Loading question...</div>
+        <div class="buttons">
+            <button id="yesButton" onclick="makeChoice('yes')">Yes</button>
+            <button id="noButton" onclick="makeChoice('no')">No</button>
+        </div>
+        <div id="feedback" class="feedback"></div>
+        <div id="progress">Questions Asked: <span id="questionCount">0</span> / 20</div>
+        <div id="score">Score: <span id="points">0</span></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
